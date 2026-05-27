@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - R Coffee Cafe</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="auth-page">
+<div class="auth-box">
+<h2>Create Account ✨</h2>
+<form onsubmit="registerUser(event)">
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Enter Email" required>
+<input type="password" placeholder="Create Password" required>
+<button type="submit">Register</button>
+</form>
+
+<p>Already have an account?</p>
+<a href="login.html">Login Here</a>
+</div>
+</div>
+
+<script>
+function registerUser(e){
+e.preventDefault();
+alert("Registration Successful!");
+window.location.href="login.html";
+}
+</script>
+
+</body>
+</html>
